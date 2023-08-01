@@ -17,7 +17,7 @@ app.use('/api/messages', messageRoute)
 main().catch(err => console.log(err));
 
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/chat');
+    await mongoose.connect('mongodb+srv://Varun:fZDhVQyk5gXrku1e@cluster0.la6cbta.mongodb.net/?retryWrites=true&w=majority');
 
     console.log("DB connected successfully")
 }
